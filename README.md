@@ -16,7 +16,7 @@ Verify an I2C Master Bridge (I2CMB) module that communicates using a Wishbone-co
 
 ### I2CMB DUT Architecture
 <p align="center">
-<img width="483" height="297" alt="image" src="https://github.com/user-attachments/assets/397cf15b-0721-49a3-9771-92f3fa1d1704"/>
+<img width="483" height="297" alt="image" src=".images/testbench.png"/>
 </p>
 
 where, **wb_if** is Wishbone interface, **i2c_if** is I2C slave model and **I2CMB** represents Master (DUT), serving as the bridge connecting both.
@@ -57,7 +57,7 @@ Implementation of I2CMB master with a Wishbone interface, ensuring the master is
 - Structure implemented:
 
 <p align="center">
-  <img align="center" width="480" height="190" alt="image" src="https://github.com/user-attachments/assets/40bef31d-2da0-46a7-91f9-6a0f49cb56bc" />
+  <img align="center" width="480" height="190" src="./images/interface_structure.png" />
 </p>
 
 - In i2c_if interface, the following modules were implemented:
@@ -76,7 +76,7 @@ In this all the components of wishbone and slave agents along with environment w
 
 Architecture:
 <p align="center">
-<img align="center" width="720" height="323" alt="image" src="https://github.com/user-attachments/assets/1f5cbe1b-52b5-417c-9d1f-b48446049649" />
+<img align="center" width="720" height="323" src=".images/detailed_bench_architeture.png" />
 </p>
 
 - Agent implementation:
@@ -129,7 +129,7 @@ Challenges faced:
 
 - Functional coverage achieved:
 <p align="center">
-<img width="946" height="313" alt="image" src="https://github.com/user-attachments/assets/b24da004-47f4-48dc-9535-7af3211426ee" />
+<img width="946" height="313" src=".images/coverage_output.png" />
 </p>
 
 For further details contact me on ksuthar@ncsu.edu
